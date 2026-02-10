@@ -1,6 +1,7 @@
 # Counting Game - Exam
-## Requirements
+Exam for the "Symbolic AI and SMT solving" seminar by dr. Enrico Lipparini
 
+## Requirements
 Install z3 Python APIs through pip: 
 ```pip3 install z3-solver```
 
