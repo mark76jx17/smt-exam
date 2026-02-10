@@ -163,7 +163,8 @@ Distance from goal after attack: <distance_after_attack>
 To execute the code, run in terminal:
 
 ```bash
-python Exam.py --numbers 1 3 5 8 10 50 --target 462
+python Exam.py # deafult option to execute [1, 3, 5, 8, 10, 50], Goal: 462
+python Exam.py --numbers 1 3 5 8 10 50 --target 462 # to specify numbers and goal 
 ```
 
 To execute the resilient strategy, run in terminal:
@@ -171,4 +172,11 @@ To execute the resilient strategy, run in terminal:
 ```bash
 python Exam.py --numbers 1 3 5 8 10 50 --target 462 --resilient
 ```
+
+To execute a mini-benchmark: 
+
+```bash
+ python Exam.py --benchmark
+```
+
 
