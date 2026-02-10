@@ -256,6 +256,19 @@ if __name__ == '__main__':
     else:
         nums = args.numbers if args.numbers else [1, 3, 5, 8, 10, 50]
         goal = args.target if args.target else 462
+
+        # Input validation
+        if len(nums) < 2:
+            parser.error("at least 2 numbers are required")
+        if len(nums) != len(set(nums)):
+            parser.error("numbers must be distinct")
+        if any(n <= 0 for n in nums):
+            parser.error("numbers must be positive integers")
+        if goal <= 0:
+            parser.error("target must be a positive integer")
+        if (args.numbers is None) != (args.target is None):
+            parser.error("--numbers and --target must be used together")
+
         print(f"Numbers: {nums}, Goal: {goal}")
         if args.resilient:
             print("Mode: Resilient\n")
